@@ -70,6 +70,8 @@ header {
     background: #34547A;
     text-decoration: none;
     padding: 19px 41px 20px 41px;
+    display: block;
+    width: 143px;
 }
 /*----------about-section----------*/
 .about-section {
