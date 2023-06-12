@@ -12,7 +12,7 @@ body {
     background-color: #E6E6E6;
     margin: auto auto 50px;
 }
-.container:after {
+.container::after {
     content: "";
     clear: both;
     display: block;
