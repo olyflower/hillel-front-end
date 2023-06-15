@@ -1,0 +1,112 @@
+footer {
+    background-color: #ffffff;
+}
+/*-----footer-container-1------*/
+.footer-container-1 {
+    padding: 60px 0;
+    font-size: 0;
+    margin: auto;
+    max-width: 1110px;
+}
+.footer-items {
+    width: 255px;
+    height: 253px;
+    display: inline-block;
+}
+.footer-items:not(:first-child) {
+    margin-left: 30px;
+}
+.footer-items h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 30px;
+    max-width: 255px;
+}
+.footer-border {
+    border: 1px solid #EFEFEF;
+    margin-bottom: 25px;
+}
+.item a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 28px;
+    color: #828282;
+}
+.footer-border-2 {
+    border: 1px solid #EFEFEF;
+}
+
+/*-----footer-container-2------*/
+.footer-container-2 {
+    padding: 37px 0 38px;
+    margin: auto;
+}
+.footer-container-2-content {
+    max-width: 1110px;
+    margin: auto;
+    font-size: 0;
+    text-align: center;
+}
+.social-links {
+    max-width: 175px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.facebook {
+    margin-left: 20px;
+}
+.instagram {
+    margin-left: 20px;
+}
+.contacts {
+    max-width: 337px;
+    margin-left: 598px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+}
+.callback {
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    max-width: 170px;
+    padding: 12px 57px 13px 56px;
+}
+
+/*-----footer-container-3------*/
+.footer-container-3 {
+    background-color: #EFEFEF;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.footer-container-3-content {
+    font-size: 0;
+    max-width: 1110px;
+    margin: auto;
+}
+.footer-text-1 {
+    font-size: 12px;
+    line-height: 14px;
+    color: #828282;
+    display: inline-block;
+}
+.footer-text-2 {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    color: #828282;
+    display: inline-block;
+    margin-left: 595px;
+}

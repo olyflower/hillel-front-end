@@ -1,0 +1,96 @@
+header {
+    box-sizing: border-box;
+}
+
+/*-----header-container-1-----*/
+.header-container-1 {
+    background-color: #E5E5E5;
+    padding: 17px 0 16px;
+}
+.header-container-1-content {
+    max-width: 1110px;
+    margin: auto;
+}
+.nav-1 ul {
+    text-align: center;
+}
+.nav-1 li {
+    display: inline-block;
+}
+.nav-1 a{
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    color: #333333;
+}
+.nav-1 li:not(:first-child) {
+    margin-left: 30px;
+}
+/*-----header-container-2-----*/
+
+.header-container-2 {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+.header-container-2-content {
+    max-width: 1110px;
+    margin: auto;
+    font-size: 0;
+}
+.logo-beauty {
+    max-width: 258px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-contacts {
+    max-width: 337px;
+    margin-left: 515px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-phone {
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+.logo-callback {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    max-width: 170px;
+    padding: 12px 57px 13px 56px;
+}
+
+/*-----border-----*/
+.footer-border-2 {
+    border: 1px solid #EFEFEF;
+}
+
+/*-----header-container-3-----*/
+.header-container-3 {
+    background-color: #ffffff;
+    padding: 30px 0;
+}
+.nav-3 ul {
+    text-align: center;
+}
+.nav-3 li {
+    display: inline-block;
+}
+.nav-3 a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.nav-3 li:not(:first-child) {
+    margin-left: 30px;
+}
