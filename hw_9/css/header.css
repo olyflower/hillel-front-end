@@ -30,32 +30,39 @@ header {
 
 .header-container-2 {
     background-color: #ffffff;
-    padding: 20px 0;
 }
 .header-container-2-content {
     max-width: 1110px;
     margin: auto;
-    font-size: 0;
+}
+.header-container-2-content::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 .logo-beauty {
     max-width: 258px;
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .logo-contacts {
     max-width: 337px;
-    margin-left: 515px;
-    display: inline-block;
-    vertical-align: middle;
+    float: right;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 .logo-phone {
+    float: left;
     font-size: 16px;
     line-height: 19px;
     color: #000000;
     text-decoration: none;
     margin-right: 40px;
+    margin-top: 14px;
 }
 .logo-callback {
+    float: right;
     font-size: 14px;
     line-height: 16px;
     text-align: center;

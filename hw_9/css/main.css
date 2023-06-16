@@ -72,8 +72,7 @@ body {
     background-color: #F13C6E;
     max-width: 540px;
     display: inline-block;
-    padding-top: 31px;
-    padding-bottom:39px
+    padding: 31px 0 39px;
 }
 .block-content {
     max-width: 250px;

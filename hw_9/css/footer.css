@@ -41,38 +41,45 @@ footer {
 /*-----footer-container-2------*/
 .footer-container-2 {
     padding: 37px 0 38px;
-    margin: auto;
 }
 .footer-container-2-content {
     max-width: 1110px;
     margin: auto;
-    font-size: 0;
-    text-align: center;
+}
+.footer-container-2-content::after {
+    content: "";
+    clear: both;
+    display: block;
 }
 .social-links {
     max-width: 175px;
-    display: inline-block;
-    vertical-align: middle;
+    float: left;
+}
+.youtube {
+    float: left;
 }
 .facebook {
     margin-left: 20px;
+    float: left;
 }
 .instagram {
     margin-left: 20px;
+    float: left;
 }
 .contacts {
     max-width: 337px;
-    margin-left: 598px;
-    display: inline-block;
-    vertical-align: middle;
+    float: right;
 }
 .phone {
     font-size: 16px;
     line-height: 19px;
     color: #000000;
     text-decoration: none;
+    float: left;
+    margin-top: 14px;
 }
 .callback {
+    float: right;
     margin-left: 40px;
     font-size: 14px;
     line-height: 16px;
@@ -88,8 +95,7 @@ footer {
 /*-----footer-container-3------*/
 .footer-container-3 {
     background-color: #EFEFEF;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    padding: 25px 0;
 }
 .footer-container-3-content {
     font-size: 0;
