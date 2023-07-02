@@ -1,0 +1,59 @@
+body {
+    box-sizing: border-box;
+}
+
+.content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-menu li {
+    float: left;
+    position: relative;
+}
+
+.main-menu li a {
+    color: #cccccc;
+    background-color: #2f3131;
+    text-decoration: none;
+    display: block;
+    padding: 20px 40px;
+}
+
+.main-menu li:hover .secondary-menu {
+    display: block;
+}
+
+.main-menu li:hover a,
+.main-menu li a:hover {
+    background-color: #4545ee;
+    color: #ffffff;
+}
+
+.secondary-menu {
+    position: absolute;
+    top: 100%;
+    display: none;
+}
+
+.secondary-menu li {
+    width: 220px;
+    position: relative;
+}
+
+.secondary-menu li a {
+    color: #ffffff;
+    background-color: #4545ee;
+}
+
+.third-menu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+
+.secondary-menu li:hover .third-menu {
+    display: block;
+}
