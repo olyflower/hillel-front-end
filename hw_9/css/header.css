@@ -1,57 +1,77 @@
-header {
+* {
     box-sizing: border-box;
-}
-
+   }
 /*-----header-container-1-----*/
 .header-container-1 {
     background-color: #E5E5E5;
     padding: 17px 0 16px;
 }
+
 .header-container-1-content {
     max-width: 1110px;
     margin: auto;
 }
+
 .nav-1 ul {
     text-align: center;
 }
+
 .nav-1 li {
     display: inline-block;
 }
-.nav-1 a{
+
+.nav-1 a {
     text-decoration: none;
     font-size: 14px;
     line-height: 16px;
     color: #333333;
 }
+
+.nav-1 a:hover {
+    color: black;
+}
+
 .nav-1 li:not(:first-child) {
     margin-left: 30px;
 }
+
 /*-----header-container-2-----*/
 
 .header-container-2 {
     background-color: #ffffff;
 }
+
 .header-container-2-content {
     max-width: 1110px;
     margin: auto;
 }
+
 .header-container-2-content::after {
     content: "";
     clear: both;
     display: block;
 }
+
 .logo-beauty {
     max-width: 258px;
     float: left;
     margin-bottom: 20px;
     margin-top: 20px;
+    transition: transform 0.1s;
 }
+
+.logo-beauty:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
 .logo-contacts {
     max-width: 337px;
     float: right;
     margin-bottom: 40px;
     margin-top: 40px;
 }
+
 .logo-phone {
     float: left;
     font-size: 16px;
@@ -60,18 +80,34 @@ header {
     text-decoration: none;
     margin-right: 40px;
     margin-top: 14px;
+    transition: transform 0.1s;
 }
+
+.logo-phone:hover {
+    color: #F13C6E;
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+}
+
 .logo-callback {
     float: right;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     color: #000000;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border: 2px solid #F13C6E;
     border-radius: 40px;
     max-width: 170px;
     padding: 12px 57px 13px 56px;
+    cursor: pointer;
+    transition: color 0.1s, background-color 0.1s;
+}
+
+.logo-callback:hover {
+    background-color: #F13C6E;
+    color: #FFFFFF;
+    transition: all 0.2s linear;
 }
 
 /*-----border-----*/
@@ -84,12 +120,15 @@ header {
     background-color: #ffffff;
     padding: 30px 0;
 }
+
 .nav-3 ul {
     text-align: center;
 }
+
 .nav-3 li {
     display: inline-block;
 }
+
 .nav-3 a {
     text-decoration: none;
     font-style: normal;
@@ -98,6 +137,11 @@ header {
     line-height: 19px;
     color: #000000;
 }
+
+.nav-3 a:hover {
+    color: #F13C6E;
+}
+
 .nav-3 li:not(:first-child) {
     margin-left: 30px;
 }
