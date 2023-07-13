@@ -1,161 +1,3 @@
-@font-face {
-  font-family: "Graphik LC TT";
-  src: url("../fonts/GraphikLCG-Regular.ttf") format("truetype"), url("../fonts/GraphikLCG-Semibold.ttf") format("truetype");
-}
-header, main, footer {
-  font-family: Graphik LC TT, sans-serif;
-}
-
-/*header*/
-.header-container {
-  padding: 25px 0;
-  border-bottom: 1px solid #CCCCCC;
-  margin-bottom: 97px;
-}
-
-.header-content {
-  max-width: 1290px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 57px;
-  margin-left: 51px;
-}
-.menu a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  line-height: 20px;
-}
-
-.header-buttons {
-  display: flex;
-  column-gap: 10px;
-  margin-left: auto;
-}
-
-.log-in {
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 45px;
-  text-align: center;
-  padding: 0 36px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  color: #000000;
-}
-
-.try-free {
-  text-decoration: none;
-  font-weight: 600;
-  line-height: 45px;
-  text-align: center;
-  background-color: #FF6336;
-  padding: 0 21px;
-  color: #ffffff;
-}
-
-/*footer*/
-/*footer-links*/
-.footer-links {
-  max-width: 1290px;
-  padding-bottom: 95px;
-  margin: auto auto 48px;
-  border-bottom: 1px solid #000000;
-  display: flex;
-  justify-content: space-between;
-}
-
-.article-race {
-  max-width: 300px;
-  margin-right: 140px;
-}
-.article-race h3 {
-  margin-bottom: 28px;
-  color: #000000;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 50px;
-}
-.article-race p {
-  margin-bottom: 15px;
-  color: #000000;
-  font-size: 20px;
-  line-height: 30px;
-}
-.article-race a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 30px;
-}
-
-.race {
-  margin-bottom: 31px;
-}
-
-.logo-specialized {
-  margin-bottom: 11px;
-}
-
-.links {
-  max-width: 850px;
-  display: flex;
-  gap: 34px;
-}
-
-.link-item {
-  width: 187px;
-}
-.link-item h4 {
-  margin-bottom: 21px;
-  color: #000000;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 25px;
-}
-.link-item a {
-  text-decoration: none;
-  color: #000000;
-  font-size: 15px;
-  line-height: 15px;
-}
-.link-item li {
-  margin-bottom: 15px;
-}
-
-/*footer-content*/
-.footer-content {
-  max-width: 1290px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer-logo-text {
-  display: flex;
-}
-
-.footer-text {
-  max-width: 301px;
-  margin-left: 14px;
-  color: #000000;
-  font-size: 12px;
-  line-height: 15px;
-}
-
-.copyright {
-  margin-right: 76px;
-  color: #000000;
-  font-size: 12px;
-  line-height: 15px;
-}
-
 /*hero-section*/
 .hero-section {
   padding: 32px 0 35px;
@@ -163,7 +5,7 @@ header, main, footer {
 }
 
 .hero-container {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -175,14 +17,14 @@ header, main, footer {
 
 .hero-title {
   margin-bottom: 51px;
-  color: #000000;
+  color: $color-black;
   font-size: 65px;
   font-weight: 600;
   line-height: 70px;
 }
 
 .hero-text {
-  color: #000000;
+  color: $color-black;
   font-size: 25px;
   line-height: 35px;
   margin-bottom: 50px;
@@ -196,26 +38,27 @@ header, main, footer {
 
 .hero-try {
   padding: 0 41px 0 42px;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   font-weight: 600;
   line-height: 60px;
-  background-color: #FF6336;
+  background-color: $color-main-btn;
   text-decoration: none;
 }
 
 .hero-book {
   padding: 0 29px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-weight: 600;
   line-height: 60px;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba($color-black, 0.50);
+
 }
 
 .hero-text-end {
-  color: #000000;
+  color: $color-black;
   font-size: 15px;
   line-height: 25px;
 }
@@ -232,13 +75,13 @@ header, main, footer {
 }
 
 .container-companies {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto;
 }
 
 .text-companies {
   max-width: 720px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 50px;
   font-weight: 600;
@@ -253,7 +96,7 @@ header, main, footer {
 
 /*section-control*/
 .container-control {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto auto 250px;
   display: flex;
   justify-content: space-between;
@@ -266,7 +109,7 @@ header, main, footer {
 
 .title {
   margin-bottom: 30px;
-  color: #000000;
+  color: $color-black;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -274,7 +117,7 @@ header, main, footer {
 
 .text {
   margin-bottom: 30px;
-  color: #000000;
+  color: $color-black;
   font-size: 20px;
   line-height: 30px;
 }
@@ -282,8 +125,8 @@ header, main, footer {
 .start-button {
   text-decoration: none;
   border: none;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: $color-white;
+  color: $color-black;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -295,7 +138,7 @@ header, main, footer {
 
 /*section-time*/
 .container-time {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto auto 250px;
   display: flex;
   column-gap: 138px;
@@ -312,7 +155,7 @@ header, main, footer {
 
 /*section-quality*/
 .container-quality {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto auto 250px;
   display: flex;
   justify-content: space-between;
@@ -329,7 +172,7 @@ header, main, footer {
 
 /*section-work*/
 .container-work {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto auto 150px;
   display: flex;
   justify-content: space-between;
@@ -355,13 +198,13 @@ header, main, footer {
 }
 
 .container-localise {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: 0 auto;
 }
 
 .title-localise {
   margin-bottom: 58px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 50px;
   font-weight: 600;
@@ -381,7 +224,7 @@ header, main, footer {
 }
 
 .card-title {
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -389,7 +232,7 @@ header, main, footer {
 }
 
 .card-text {
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 18px;
   line-height: 25px;
@@ -461,13 +304,13 @@ header, main, footer {
 }
 
 .container-boost {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto;
 }
 
 .title-boost {
   margin-bottom: 75px;
-  color: #000000;
+  color: $color-black;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -484,7 +327,7 @@ header, main, footer {
 
 .article-title {
   margin-bottom: 34px;
-  color: #000000;
+  color: $color-black;
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
@@ -496,7 +339,7 @@ header, main, footer {
 }
 
 .boost-text {
-  color: #000000;
+  color: $color-black;
   font-size: 20px;
   line-height: 30px;
   margin-bottom: 25px;
@@ -507,17 +350,19 @@ header, main, footer {
   margin-bottom: 67px;
 }
 
+
 .translators-img {
   padding-top: 59px;
   margin-bottom: 58px;
 }
 
 .learn-button {
-  color: #000000;
+  color: $color-black;
   font-size: 20px;
   line-height: 30px;
   text-decoration-line: underline;
 }
+
 
 /*section-avatar */
 .section-avatar {
@@ -525,7 +370,7 @@ header, main, footer {
 }
 
 .container-avatar {
-  max-width: 1290px;
+  max-width: $content-width;
   padding-top: 53px;
   padding-bottom: 102px;
   display: flex;
@@ -539,14 +384,14 @@ header, main, footer {
 
 .avatar-text {
   margin-bottom: 23px;
-  color: #000000;
+  color: $color-black;
   font-size: 30px;
   line-height: 40px;
 }
 
 .avatar-title {
   margin-bottom: 7px;
-  color: #000000;
+  color: $color-black;
   font-size: 15px;
   line-height: 25px;
 }
@@ -559,13 +404,13 @@ header, main, footer {
 }
 
 .container-rewards {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto;
   display: flex;
 }
 
 .border {
-  border-left: 2px solid #000000;
+  border-left: 2px solid $color-black;
   margin-right: 71px;
 }
 
@@ -581,7 +426,7 @@ header, main, footer {
 .text-rewards {
   max-width: 461px;
   margin-right: 125px;
-  color: #000000;
+  color: $color-black;
   font-size: 35px;
   font-weight: 600;
   line-height: 50px;
@@ -602,7 +447,7 @@ header, main, footer {
 }
 
 .container-bird {
-  max-width: 1290px;
+  max-width: $content-width;
   margin: auto;
 }
 
@@ -610,7 +455,7 @@ header, main, footer {
   margin: auto;
   display: block;
   max-width: 791px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 65px;
   font-weight: 600;
@@ -620,7 +465,7 @@ header, main, footer {
 .text-bird {
   max-width: 539px;
   margin: auto auto 25px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 25px;
   line-height: 30px;
@@ -638,8 +483,8 @@ header, main, footer {
   margin: auto;
   text-decoration: none;
   padding: 0 20px;
-  background-color: #FF6336;
-  color: #ffffff;
+  background-color: $color-main-btn;
+  color: $color-white;
   text-align: center;
   font-weight: 600;
   line-height: 60px;
@@ -651,7 +496,7 @@ header, main, footer {
 }
 
 .container-localisation {
-  max-width: 1290px;
+  max-width: $content-width;
   padding-top: 119px;
   padding-bottom: 161px;
   margin: auto auto 92px;
@@ -664,7 +509,7 @@ header, main, footer {
 
 .title-localisation {
   margin-bottom: 29px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 65px;
   font-weight: 600;
@@ -673,7 +518,7 @@ header, main, footer {
 
 .text-localisation {
   margin-bottom: 54px;
-  color: #000000;
+  color: $color-black;
   text-align: center;
   font-size: 20px;
   line-height: 30px;
@@ -684,13 +529,11 @@ header, main, footer {
   margin: auto;
   display: block;
   text-decoration: none;
-  background-color: #000000;
+  background-color: $color-black;
   padding: 0 40px;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   font-size: 17px;
   font-weight: 600;
   line-height: 60px;
 }
-
-/*# sourceMappingURL=styles.css.map */
