@@ -1,6 +1,29 @@
-@mixin button-properties {
+@mixin header-buttons {
+  box-sizing: border-box;
   text-decoration: none;
+  font-family: GraphikLCG-Semibold, sans-serif;
   font-weight: 600;
   line-height: 45px;
   text-align: center;
+}
+
+@mixin hero-buttons {
+  box-sizing: border-box;
+  width: 160px;
+  text-align: center;
+  font-family: GraphikLCG-Semibold, sans-serif;
+  font-weight: 600;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+@mixin start-button {
+  text-decoration: none;
+  border: none;
+  background-color: $color-white;
+  color: $color-black;
+  font-family: GraphikLCG-Semibold, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
 }

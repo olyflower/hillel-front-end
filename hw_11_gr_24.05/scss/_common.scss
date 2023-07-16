@@ -1,155 +1,165 @@
-header, main, footer {
-  font-family: Graphik LC TT, sans-serif;
+body {
+  box-sizing: border-box;
 }
-
 /*header*/
-.header-container {
+.header {
   padding: 25px 0;
   border-bottom: 1px solid #CCCCCC;
   margin-bottom: 97px;
-}
 
-.header-content {
-  max-width: $content-width;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
+  &__content {
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    align-items: center;
+  }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 57px;
-  margin-left: 51px;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 57px;
+    margin-left: 51px;
+  }
 
-  a {
+  &__menu-link {
     text-decoration: none;
     color: $color-black;
+    font-family: GraphikLCG-Regular, sans-serif;
     font-size: 15px;
     line-height: 20px;
   }
-}
 
-.header-buttons {
-  display: flex;
-  column-gap: 10px;
-  margin-left: auto;
-}
+  &__buttons {
+    display: flex;
+    column-gap: 10px;
+    margin-left: auto;
+  }
 
-.log-in {
-  @include button-properties;
-  padding: 0 36px;
-  border: 1px solid rgba($color-black, 0.50);
-  color: $color-black;
-}
+  &__button-login {
+    @include header-buttons;
+    width: 120px;
+    border: 1px solid rgba($color-black, 0.50);
+    color: $color-black;
+  }
 
-.try-free {
-  @include button-properties;
-  background-color: $color-main-btn;
-  padding: 0 21px;
-  color: $color-white;
+  &__button-try {
+    @include header-buttons;
+    width: 120px;
+    background-color: $color-main-btn;
+    color: $color-white;
+  }
 }
 
 /*footer*/
+.footer {
+  background-color: #EEE;
+  padding-top: 92px;
+  padding-bottom: 48px;
 
-/*footer-links*/
-.footer-links {
-  max-width: $content-width;
-  padding-bottom: 95px;
-  margin: auto auto 48px;
-  border-bottom: 1px solid $color-black;
-  display: flex;
-  justify-content: space-between;
-}
+  &__content {
+    max-width: $content-width;
+    padding-bottom: 95px;
+    margin: auto auto 48px;
+    border-bottom: 1px solid $color-black;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.article-race {
-  max-width: 300px;
-  margin-right: 140px;
+  &__studies {
+    max-width: 300px;
+    margin-right: 140px;
+  }
 
-  h3 {
+  &__studies-title {
     margin-bottom: 28px;
     color: $color-black;
+    font-family: GraphikLCG-Semibold, sans-serif;
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
   }
 
-  p {
+  &__studies-img {
+    margin-bottom: 31px;
+  }
+
+  &__studies-logo {
+    margin-bottom: 11px;
+  }
+
+  &__studies-text {
     margin-bottom: 15px;
     color: $color-black;
+    font-family: GraphikLCG-Regular, sans-serif;
     font-size: 20px;
     line-height: 30px;
   }
 
-  a {
+  &__studies-button {
     text-decoration: none;
     color: $color-black;
+    font-family: GraphikLCG-Semibold, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
   }
-}
 
-.race {
-  margin-bottom: 31px;
-}
+  &__links {
+    max-width: 850px;
+    display: flex;
+    gap: 34px;
+  }
 
-.logo-specialized {
-  margin-bottom: 11px;
-}
+  &__link-item {
+    width: 187px;
+  }
 
-.links {
-  max-width: 850px;
-  display: flex;
-  gap: 34px;
-}
-
-.link-item {
-  width: 187px;
-
-  h4 {
+  &__links-title {
     margin-bottom: 21px;
     color: $color-black;
+    font-family: GraphikLCG-Semibold, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 25px;
   }
 
-  a {
+  &__links-button {
     text-decoration: none;
     color: $color-black;
+    font-family: GraphikLCG-Regular, sans-serif;
     font-size: 15px;
     line-height: 15px;
   }
 
-  li {
+  &__links-li {
     margin-bottom: 15px;
   }
-}
 
-/*footer-content*/
-.footer-content {
-  max-width: $content-width;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
+  &__info {
+    max-width: $content-width;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
 
-.footer-logo-text {
-  display: flex;
-}
+  &__info-text {
+    display: flex;
+  }
 
-.footer-text {
-  max-width: 301px;
-  margin-left: 14px;
-  color: $color-black;
-  font-size: 12px;
-  line-height: 15px;
-}
+  &__text-item {
+    max-width: 301px;
+    margin-left: 14px;
+    color: $color-black;
+    font-family: GraphikLCG-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  }
 
-.copyright {
-  margin-right: 76px;
-  color: $color-black;
-  font-size: 12px;
-  line-height: 15px;
+  &__copyright {
+    margin-right: 76px;
+    color: $color-black;
+    font-family: GraphikLCG-Regular, sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
