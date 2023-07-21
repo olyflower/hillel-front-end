@@ -1,6 +1,26 @@
-body {
+* {
   box-sizing: border-box;
 }
+
+.content {
+  max-width: $desktopWidth;
+  margin: auto;
+
+  @media screen and (max-width: 1289px) {
+    width: $tabletWidth;
+  }
+
+  @media screen and (max-width: 959px) {
+    width: $landscapeWidth;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: $mobileWidth;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 /*header*/
 .header {
   padding: 25px 0;
@@ -8,10 +28,12 @@ body {
   margin-bottom: 97px;
 
   &__content {
-    max-width: $content-width;
-    margin: auto;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__menu {
@@ -19,6 +41,15 @@ body {
     justify-content: space-between;
     column-gap: 57px;
     margin-left: 51px;
+
+    @media screen and (max-width: 1289px) {
+      align-items: center;
+      column-gap: 20px;
+    }
+
+    @media screen and (max-width: 959px) {
+      display: none;
+    }
   }
 
   &__menu-link {
@@ -33,6 +64,13 @@ body {
     display: flex;
     column-gap: 10px;
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      row-gap: 10px;
+      margin-right: auto;
+      margin-top: 20px;
+    }
   }
 
   &__button-login {
@@ -56,18 +94,27 @@ body {
   padding-top: 92px;
   padding-bottom: 48px;
 
+  /*footer-content*/
   &__content {
-    max-width: $content-width;
     padding-bottom: 95px;
-    margin: auto auto 48px;
+    margin-bottom: 48px;
     border-bottom: 1px solid $color-black;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__studies {
-    max-width: 300px;
+    width: 300px;
     margin-right: 140px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      margin-right: unset;
+    }
   }
 
   &__studies-title {
@@ -81,6 +128,10 @@ body {
 
   &__studies-img {
     margin-bottom: 31px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
   }
 
   &__studies-logo {
@@ -105,9 +156,18 @@ body {
   }
 
   &__links {
-    max-width: 850px;
+    max-width: 835px;
     display: flex;
     gap: 34px;
+
+    @media screen and (max-width: 1289px) {
+      flex-wrap: wrap;
+    }
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 25px;
+    }
   }
 
   &__link-item {
@@ -135,24 +195,48 @@ body {
     margin-bottom: 15px;
   }
 
+  /*footer-info*/
   &__info {
-    max-width: $content-width;
-    margin: auto;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__info-text {
     display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-img {
+    width: 90px;
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__text-item {
-    max-width: 301px;
+    width: 301px;
     margin-left: 14px;
     color: $color-black;
     font-family: GraphikLCG-Regular, sans-serif;
     font-size: 12px;
     line-height: 15px;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+      margin-left: unset;
+      margin-bottom: 20px;
+    }
   }
 
   &__copyright {
