@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>H-legal</title>
+</head>
+<body>
+<section class="popup">
+    <div class="popup__content">
+        <div class="popup__text">
+            <h1 class="popup__text-title">We would like to help you</h1>
+            <a href="#">
+                <img src="../img/close.svg" alt="close" class="popup__close">
+            </a>
+        </div>
+        <div class="popup__name-message">
+            <label for="name"></label><input class="popup__name" type="text" id="name" name="name" placeholder="Name"
+                                             required>
+            <label for="message"></label><textarea class="popup__message" id="message" name="name" placeholder="Message"
+                                                   required></textarea>
+        </div>
+        <div class="popup__form">
+            <h2 class="popup__form-title">How to answer you?</h2>
+            <label for="phone"></label><input class="popup__phone" type="tel" id="phone" name="phone"
+                                              placeholder="Phone number" required>
+            <label for="email"></label><input class="popup__email" type="email" id="email" name="email"
+                                              placeholder="Email" required>
+        </div>
+        <button class="popup__button" type="submit">Send message</button>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+}
+
+@import "variables";
+
+.content {
+  max-width: $desktopHD;
+  margin: auto;
+
+  @media screen and (max-width: 1599px) {
+    max-width: $desktopSD;
+  }
+
+  @media screen and (max-width: 1319px) {
+    max-width: $tabletHD;
+  }
+
+  @media screen and (max-width: 903px) {
+    max-width: $tabletSD;
+  }
+
+  @media screen and (max-width: 647px) {
+    max-width: 100%;
+  }
+}
+
+.main {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  position: relative;
+  padding-top: 50px;
+  z-index: -2;
+
+  @media screen and (max-width: 647px) {
+    padding-top: 0;
+  }
+
+  &__image-container {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 903px) {
+      height: 1104px;
+    }
+  }
+
+  &__image {
+    display: block;
+  }
+}

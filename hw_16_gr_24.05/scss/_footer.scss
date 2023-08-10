@@ -1,0 +1,119 @@
+@import "variables";
+
+//footer
+
+.footer {
+  background-color: $grayBg;
+
+  &__content {
+    border-top: 2px solid $graySeparator;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 647px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  //footer-info
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    @media screen and (max-width: 903px) {
+      margin-right: -30px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @media screen and (max-width: 647px) {
+      flex-direction: column;
+    }
+  }
+
+  &__address-svg {
+    @media screen and (max-width: 647px) {
+      display: none;
+    }
+  }
+
+  &__address-text {
+    color: $mainRegular;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__address-link {
+    color: $activeRegular;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    @media screen and (max-width: 647px) {
+      flex-direction: column;
+    }
+  }
+
+  &__contacts-fb:hover svg path {
+    fill: $accent;
+  }
+
+  &__contacts-phone {
+    text-decoration: none;
+    color: $mainAlt;
+    text-align: right;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__contacts-email {
+    text-decoration: none;
+    color: $activeRegular;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__contacts-email:hover {
+    color: $accent;
+  }
+
+  //footer-copyright
+
+  &__copyright-text {
+    color: $grayText;
+    text-align: right;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
